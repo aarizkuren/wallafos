@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>wallaFos</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        navigator.mozSetMessageHandler('activity', function(activityRequest){
+            var option = activityRequest.source;
+
+            if (option.name === "view") {
+                console.log('Funtziona!');
+                console.log(activityRequest);
+            }
+        });
+    </script>
+  </body>
+</html>
