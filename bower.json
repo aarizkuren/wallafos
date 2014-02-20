@@ -1,0 +1,27 @@
+{
+  "name": "wallaFos",
+  "version": "0.0.1",
+  "authors": [
+    "Asier Arizkuren <asier@arizkuren.net>"
+  ],
+  "description": "Read it later service, based on wallabag",
+  "main": "index.html",
+  "keywords": [
+    "read it later",
+    "wallabag",
+    "pocket"
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/aarizkuren/wallafos",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "scripts/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+      "lungo": "*"
+  }
+}

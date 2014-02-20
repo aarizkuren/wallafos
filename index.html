@@ -1,17 +1,19 @@
 <html>
   <head>
     <title>wallaFos</title>
+    <link rel="stylesheet" href="scripts/components/lungo/lungo.css">
+    <link rel="stylesheet" href="scripts/components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="scripts/components/lungo/lungo.theme.css">
   </head>
   <body>
-    <script type="text/javascript">
-        navigator.mozSetMessageHandler('activity', function(activityRequest){
-            var option = activityRequest.source;
-
-            if (option.name === "view") {
-                console.log('Funtziona!');
-                console.log(activityRequest);
-            }
-        });
-    </script>
+    <section id="main">
+        <article id="main-article">
+            <h1 id="h1">Niananananana!</h1>
+            <p>Batman!</p>
+        </article>
+    </section>
+    <script type="text/javascript" src="scripts/components/quojs/quo.js" ></script>
+    <script type="text/javascript" src="scripts/components/lungo/lungo.js"></script>
+    <script type="text/javascript" src="scripts/wallaFos/binding.js" ></script>
   </body>
 </html>

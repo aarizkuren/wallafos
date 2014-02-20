@@ -1,0 +1,5 @@
+Walla = {
+  login: ()->
+
+  addResource: (url)->
+}

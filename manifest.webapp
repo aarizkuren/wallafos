@@ -30,6 +30,18 @@
         }
       },
       "returnValue": false
+    },
+    "share": {
+        "href": "/index.html",
+        "disposition": "window",
+        "filters": {
+            "type": "url",
+            "url": {
+                "required": true,
+                "regexp": "/^https?:/"
+            }
+        },
+        "returnValue": false
     }
   }
 }

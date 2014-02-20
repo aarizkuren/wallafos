@@ -1,1 +1,4 @@
 .idea
+*.map
+*.js
+scripts/components/*
