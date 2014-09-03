@@ -1,0 +1,50 @@
+/**
+  * Globals
+ **/
+body{
+    background-color: #312F34;
+}
+button {}
+button::-moz-focus-inner{}
+
+a {
+    text-decoration: none;
+}
+
+small{}
+
+/**
+  * header
+ */
+section > header {
+    height: 3.2rem;
+    background-color: #000000;
+}
+
+section > header > h1 {
+    color: #FFFFFF;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+section > header > nav {
+    margin-top: 0.9rem;
+    margin-right: 0.8rem;
+    text-align: right;
+}
+
+section > header > nav > a {
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
+section > header > nav > a.active {
+    color: #89f409;
+}
+
+/**
+  * Forms
+ **/
+article.form {}
+input{}
+input[type='search'] {}

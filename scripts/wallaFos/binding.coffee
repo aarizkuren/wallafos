@@ -1,8 +1,12 @@
 
-# Lungo.init({name:'WallaFOS'});
+Lungo.init({name:'WallaFOS'});
+
+console.log 'nana'
 
 #Lungo.ready ->
+#  console.log 'lolailo'
 #  Lungo.Core.log 1, 'Binding baby!'
+#  Lungo.Router.article 'main', 'main-article'
 #  Lungo.Router.section 'main'
 #$ ->
 #  console.log 'document ready!'

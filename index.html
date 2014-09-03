@@ -1,23 +1,31 @@
 <html>
   <head>
+    <meta charset="utf-8">
     <title>wallaFos</title>
-    <link rel="stylesheet" href="scripts/components/lungo/lungo.css">
-    <link rel="stylesheet" href="scripts/components/lungo/lungo.icon.css">
-    <link rel="stylesheet" href="scripts/components/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="styles/loqui/chungo.css">
+    <link rel="stylesheet" href="styles/tapquo/lungo.icon.css">
+    <link rel="stylesheet" href="styles/icomoon/icons.css">
+    <link rel="stylesheet" href="styles/wallafos/index.css">
   </head>
   <body>
-    <section id="main">
-        <article id="main-article">
-            <h1 id="h1">Niananananana!</h1>
-            <p>Batman!</p>
-        </article>
+    <section id="main" data-transition="vertical">
+      <header data-title="WallaFOS">
+        <nav class="on-right">
+          <a href="#" data-view-article="main-article" class="icon-home active">
+          <a href="#" data-view-article="preferences-article" class="icon-cog"></a>
+        </nav>
+      </header>
+      <article id="main-article" class="active">
+        <h2>Main Article</h2>
+        <p>This is text for main article</p>
+      </article>
+      <article id="preferences-article">
+        <h2>Preferences Article</h2>
+        <p>This is text for preferences page</p>
+      </article>
     </section>
-    <script type="text/javascript" src="scripts/components/quojs/quo.js" ></script>
-    <script type="text/javascript" src="scripts/components/lungo/lungo.js"></script>
+    <script type="text/javascript" src="scripts/tapquo/quo.js" ></script>
+    <script type="text/javascript" src="scripts/loqui/chungo.js"></script>
     <script type="text/javascript" src="scripts/wallaFos/binding.js" ></script>
-  <script type="text/javascript">
-      Lungo.init({});
-      Lungo.Router.article('main', 'main-article');
-  </script>
   </body>
 </html>
