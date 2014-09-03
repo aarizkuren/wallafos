@@ -19,6 +19,12 @@ small{}
 section > header {
     height: 3.2rem;
     background-color: #000000;
+    border-bottom: 0.2rem solid #89f409;
+}
+
+section > header > img {
+    float: left;
+    height: 3rem;
 }
 
 section > header > h1 {
@@ -34,12 +40,36 @@ section > header > nav {
 }
 
 section > header > nav > a {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     color: #FFFFFF;
 }
 
 section > header > nav > a.active {
     color: #89f409;
+}
+
+article {
+    padding: 1rem;
+}
+
+article > h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+article > p {
+    margin-left: 1rem;
+    text-align: center;
+}
+
+article > p > a {
+    background-color: #89f409;
+    color: #ffffff;
+    font-size: 4rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 1.5rem auto;
 }
 
 /**

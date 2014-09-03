@@ -1,19 +1,27 @@
+'use strict'
+Chungo.init({name:'WallaFOS'});
 
-Lungo.init({name:'WallaFOS'});
+$$(document).ready ->
+  setTimeout ()->
+    Lungo.Router.article 'main', 'main-unconfigured'
 
-console.log 'nana'
+    # If app is open from webApi, it check if it is configured, and shows add section
+    navigator.mozSetMessageHandler 'activity', (activityRequest)->
+      option = activityRequest.source
 
-#Lungo.ready ->
-#  console.log 'lolailo'
-#  Lungo.Core.log 1, 'Binding baby!'
-#  Lungo.Router.article 'main', 'main-article'
-#  Lungo.Router.section 'main'
-#$ ->
-#  console.log 'document ready!'
-#  navigator.mozSetMessageHandler 'activity', (activityRequest)->
-#    option = activityRequest.source
-#
-#    if (option.name in ["view", "share"])
-#      h1 = $('h1')
-#      h1.text 'Batman!'
-#      console.log 'a', activityRequest
+      if (option.name in ["view", "share"])
+        Lungo.Router.article "add", "adding"
+        $$("#walla-notify").addClass('active');
+
+    $$('#menu-home').on 'click', (e)->
+      self = $$(this)
+      e.preventDefault();
+      Lungo.Router.article 'main', 'main-configured'
+      self.siblings().removeClass 'active'
+      self.addClass('active')
+    $$('#menu-preferences').on 'click', (e)->
+      self = $$(this)
+      e.preventDefault();
+      Lungo.Router.article 'main', 'preferences'
+      self.siblings().removeClass 'active'
+      self.addClass('active')

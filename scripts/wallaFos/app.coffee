@@ -4,11 +4,11 @@ App = {
     user: ''
     password: ''
 
-  connector: new Walla
-
   retrieveConfiguration: () ->
     @configuration.host = ''
     @configuration.user = ''
     @configuration.password = ''
 
+  isConfigured: ()->
+    return false
 }

@@ -10,22 +10,38 @@
   <body>
     <section id="main" data-transition="vertical">
       <header data-title="WallaFOS">
+        <img src="img/icon.svg" alt="WallaFOS">
         <nav class="on-right">
-          <a href="#" data-view-article="main-article" class="icon-home active">
-          <a href="#" data-view-article="preferences-article" class="icon-cog"></a>
+          <a href="#" id="menu-home" class="icon-home active">
+          <a href="#" id="menu-preferences" class="icon-cog"></a>
         </nav>
       </header>
-      <article id="main-article" class="active">
-        <h2>Main Article</h2>
-        <p>This is text for main article</p>
+      <article id="main-configured">
+        <h2>WallaFOS is correctly configured</h2>
+        <p class="versionTxt">Version: <span>0.1</span></p>
+        <p class="licenseTxt">WallaFOS is released under GPLv3 License. Feel free to fork this project =)</p>
       </article>
-      <article id="preferences-article">
+      <article id="main-unconfigured">
+        <h2>WallaFOS is not yet configured</h2>
+        <p><a class="icon-cog" href="#" data-view-article="preferences"></a></p>
+      </article>
+      <article id="preferences">
         <h2>Preferences Article</h2>
         <p>This is text for preferences page</p>
       </article>
     </section>
+    <section id="add" data-transition="vertical">
+      <header data-title="WallaFOS">
+        <img src="img/icon.svg" alt="WallaFOS">
+      </header>
+      <article id="adding">
+        <h2>Adding your URL to wallabag server</h2>
+        <p id="walla-notify">Sending ...</p>
+      </article>
+    </section>
     <script type="text/javascript" src="scripts/tapquo/quo.js" ></script>
     <script type="text/javascript" src="scripts/loqui/chungo.js"></script>
+    <script type="text/javascript" src="scripts/wallaFos/app.js" ></script>
     <script type="text/javascript" src="scripts/wallaFos/binding.js" ></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
 .idea
 *.map
-*.js
+scripts/wallaFos/*.js
 scripts/components/*
